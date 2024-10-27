@@ -5,10 +5,10 @@ from uilts import *
 
 
 num_of_nodes = 50
-requests = read_demand_data(f"../data/demand_{num_of_nodes}.csv")
-travel_time = read_time_matrix(f"../data/time_matrix_{num_of_nodes}.csv")
-parameters = read_parameter(f"../data/parameter.csv")
-nodes, transfers = read_node_data(f"../data/node_{num_of_nodes}.csv")
+requests = read_demand_data(f"./data/demand_{num_of_nodes}.csv")
+travel_time = read_time_matrix(f"./data/time_matrix_{num_of_nodes}.csv")
+parameters = read_parameter(f"./data/parameter.csv")
+nodes, transfers = read_node_data(f"./data/node_{num_of_nodes}.csv")
 
 instance = Instance(nodes, transfers, requests, travel_time, parameters)
 
